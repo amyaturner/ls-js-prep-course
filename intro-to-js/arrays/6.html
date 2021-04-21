@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+
+<body>
+</body>
+
+<script>
+  
+
+  let oddLengths = arr => {
+      let arrOfStringLengths = arr.map(element => element.length);
+      let arrOfOddLengths = arrOfStringLengths.filter(length => length % 2 !== 0);
+      return arrOfOddLengths;
+  }
+
+  let arrOfStrings = ['a', 'abcd', 'abcde', 'abc', 'ab'];
+  console.log(oddLengths(arrOfStrings)); // => [1, 5, 3]
+</script>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+
+<body>
+</body>
+
+<script>
+  let myArray = [[1, 3, 6, 11], [4, 2, 4], [9, 17, 16, 0]];
+
+  myArray.forEach(outerElement => {
+    outerElement.forEach(innerElement => {
+      if (innerElement % 2 === 0) console.log(innerElement);
+    });
+  });
+
+  // CORRECT
+</script>
+
+</html>
