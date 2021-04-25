@@ -8,7 +8,19 @@
 </body>
 
 <script>
-  
+  function oddLengths(arr) {
+    return arr.reduce((accumulator, element) => {
+      let length = element.length;
+      if (length % 2 !== 0) {
+        accumulator.push(length);
+      }
+
+      return accumulator;
+    }, []);
+  }
+
+  let stringsArr = ['a', 'abcd', 'abcde', 'abc', 'ab'];
+  console.log(oddLengths(stringsArr)); // => [1, 5, 3]
 </script>
 
 </html>
